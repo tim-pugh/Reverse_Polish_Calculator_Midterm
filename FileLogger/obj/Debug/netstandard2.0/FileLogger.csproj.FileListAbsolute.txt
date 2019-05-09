@@ -1,0 +1,9 @@
+C:\Projects\ReversePolishCalculator\FileLogger\bin\Debug\netstandard2.0\FileLogger.deps.json
+C:\Projects\ReversePolishCalculator\FileLogger\bin\Debug\netstandard2.0\FileLogger.dll
+C:\Projects\ReversePolishCalculator\FileLogger\bin\Debug\netstandard2.0\FileLogger.pdb
+C:\Projects\ReversePolishCalculator\FileLogger\obj\Debug\netstandard2.0\FileLogger.csprojAssemblyReference.cache
+C:\Projects\ReversePolishCalculator\FileLogger\obj\Debug\netstandard2.0\FileLogger.csproj.CoreCompileInputs.cache
+C:\Projects\ReversePolishCalculator\FileLogger\obj\Debug\netstandard2.0\FileLogger.AssemblyInfoInputs.cache
+C:\Projects\ReversePolishCalculator\FileLogger\obj\Debug\netstandard2.0\FileLogger.AssemblyInfo.cs
+C:\Projects\ReversePolishCalculator\FileLogger\obj\Debug\netstandard2.0\FileLogger.dll
+C:\Projects\ReversePolishCalculator\FileLogger\obj\Debug\netstandard2.0\FileLogger.pdb

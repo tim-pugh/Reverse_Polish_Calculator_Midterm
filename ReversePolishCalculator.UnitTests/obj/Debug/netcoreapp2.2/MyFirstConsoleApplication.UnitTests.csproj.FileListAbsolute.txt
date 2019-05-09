@@ -1,0 +1,17 @@
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.deps.json
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.runtimeconfig.json
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.runtimeconfig.dev.json
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.dll
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.pdb
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\MyFirstConsoleApplication.dll
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\bin\Debug\netcoreapp2.2\MyFirstConsoleApplication.pdb
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\obj\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.csprojAssemblyReference.cache
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\obj\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.csproj.CoreCompileInputs.cache
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\obj\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.AssemblyInfoInputs.cache
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\obj\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.AssemblyInfo.cs
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\obj\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.csproj.CopyComplete
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\obj\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.dll
+C:\Projects\MyFirstConsoleApplication\MyFirstConsoleApplication.UnitTests\obj\Debug\netcoreapp2.2\MyFirstConsoleApplication.UnitTests.pdb

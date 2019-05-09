@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication.UnitTests\\MyFirstConsoleApplication.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication.UnitTests\\MyFirstConsoleApplication.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication.UnitTests\\MyFirstConsoleApplication.UnitTests.csproj",
+        "projectName": "MyFirstConsoleApplication.UnitTests",
+        "projectPath": "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication.UnitTests\\MyFirstConsoleApplication.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\chrisgilmore\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\chrisgilmore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication\\ReversePolishCalculator.csproj": {
+                "projectPath": "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication\\ReversePolishCalculator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication\\ReversePolishCalculator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication\\ReversePolishCalculator.csproj",
+        "projectName": "ReversePolishCalculator",
+        "projectPath": "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication\\ReversePolishCalculator.csproj",
+        "packagesPath": "C:\\Users\\chrisgilmore\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\MyFirstConsoleApplication\\MyFirstConsoleApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\chrisgilmore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Ensure.That": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "bcf90d421be5c5c3c1c5dca278b91e961eed0e00"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "MyFirstConsoleApplication/1.0.0": {
+        "dependencies": {
+          "Ensure.That": "8.1.1"
+        },
+        "runtime": {
+          "MyFirstConsoleApplication.dll": {}
+        }
+      },
+      "Ensure.That/8.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/Ensure.That.dll": {
+            "assemblyVersion": "8.1.1.98",
+            "fileVersion": "8.1.1.98"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyFirstConsoleApplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ensure.That/8.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O+wZRhLGeefi4sUY/gxCJSPas6bOpWrHtyCKDzt32fksZDmXlz6v+09MetXMWiuKgzkPRSOgJrVcMvU7QjtHow==",
+      "path": "ensure.that/8.1.1",
+      "hashPath": "ensure.that.8.1.1.nupkg.sha512"
+    }
+  }
+}

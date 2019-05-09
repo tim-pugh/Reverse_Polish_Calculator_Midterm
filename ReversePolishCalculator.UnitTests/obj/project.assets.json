@@ -3755,6 +3755,7 @@
       "path": "system.globalization.extensions/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5017,7 +5018,6 @@
       "path": "system.runtime.serialization.primitives/4.1.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6053,23 +6053,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chrisgilmore\\.nuget\\packages\\": {},
+    "C:\\Users\\Bubba\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\ReversePolishCalculator\\ReversePolishCalculator.UnitTests\\ReversePolishCalculator.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Bubba\\Desktop\\Reverse_Polish_Calculator_Midterm\\Reverse_Polish_Calculator_Midterm\\ReversePolishCalculator.UnitTests\\ReversePolishCalculator.UnitTests.csproj",
       "projectName": "ReversePolishCalculator.UnitTests",
-      "projectPath": "C:\\Projects\\ReversePolishCalculator\\ReversePolishCalculator.UnitTests\\ReversePolishCalculator.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\chrisgilmore\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\ReversePolishCalculator\\ReversePolishCalculator.UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\Bubba\\Desktop\\Reverse_Polish_Calculator_Midterm\\Reverse_Polish_Calculator_Midterm\\ReversePolishCalculator.UnitTests\\ReversePolishCalculator.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\Bubba\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bubba\\Desktop\\Reverse_Polish_Calculator_Midterm\\Reverse_Polish_Calculator_Midterm\\ReversePolishCalculator.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\chrisgilmore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bubba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6082,8 +6082,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Projects\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj": {
-              "projectPath": "C:\\Projects\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj"
+            "C:\\Users\\Bubba\\Desktop\\Reverse_Polish_Calculator_Midterm\\Reverse_Polish_Calculator_Midterm\\ReversePolishCalculator\\ReversePolishCalculator.csproj": {
+              "projectPath": "C:\\Users\\Bubba\\Desktop\\Reverse_Polish_Calculator_Midterm\\Reverse_Polish_Calculator_Midterm\\ReversePolishCalculator\\ReversePolishCalculator.csproj"
             }
           }
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using FileLogger;
 
 namespace ReversePolishCalculator
@@ -20,49 +21,71 @@ namespace ReversePolishCalculator
 
         public void CalculateRpn()
         {
-            _stack.Clear();
-            var input = Console.ReadLine();
-            _log.Trace(input);
-            var rpnTokens = input.Split(' ');
+            var rpnTokens = SplitInput(Console.ReadLine());
 
             foreach (var rpnToken in rpnTokens)
             {
                 _log.Debug(rpnToken);
-                if (decimal.TryParse(rpnToken, out decimal number))
-                { _stack.Push(number); }
+                if (TryParseDecimal(rpnToken))
+                { _stack.Push(decimal.Parse(rpnToken)); }
+                else if(ValidRpnOperation(rpnToken))
+                {
+                    _stack.Push(Calculate(rpnToken, _stack));
+                }
                 else
                 {
-                    switch (rpnToken)
-                    {
-                        case "^":
-                            var stackNumber = _stack.Pop();
-                            _stack.Push(_calculator.Power(_stack.Pop(), stackNumber));
-                            break;
-                        case "*":
-                            _stack.Push(_calculator.Multiply(_stack.Pop(), _stack.Pop()));
-                            break;
-                        case "/":
-                            stackNumber = _stack.Pop();
-                            _stack.Push(_calculator.Divide(_stack.Pop(), stackNumber));
-                            break;
-                        case "+":
-                            _stack.Push(_calculator.Add(_stack.Pop(), _stack.Pop()));
-                            break;
-                        case "-":
-                            stackNumber = _stack.Pop();
-                            _stack.Push(_calculator.Subtract(_stack.Pop(), stackNumber));
-                            break;
-                        default:
-                            var message = $"Could not parse [{rpnToken}]";
-                            _log.Fatal(message);
-                            throw new ArgumentException(message, nameof(rpnToken));
-                    }
+                    var message = $"Could not parse [{rpnToken}]";
+                    _log.Fatal(message);
+                    throw new ArgumentException(message, nameof(rpnToken));
                 }
             }
 
             var result = _stack.Pop();
             _log.Debug($"Result of calculation is [{result}]");
             Console.WriteLine(result);
+        }
+
+
+        public string [] SplitInput(string input)
+        {
+            _stack.Clear();
+            _log.Trace(input);
+            return input.Split(' ');
+        }
+
+        public bool TryParseDecimal(string rpnToken)
+        {
+         return decimal.TryParse(rpnToken, out decimal number);
+        }
+
+        public bool ValidRpnOperation(string rpnOperation)
+        {
+            var operators = new List<string> { "*", "^", "/", "+", "-" };
+            bool validOperator = operators.Contains(rpnOperation, StringComparer.OrdinalIgnoreCase);
+            if (validOperator)
+                return true;
+            else
+                return false;
+        }
+
+        public decimal Calculate(string rpnToken, Stack<decimal> _stack)
+        {
+            switch (rpnToken)
+            {
+                case "^":
+                    var stackNumber = _stack.Pop();
+                    return _calculator.Power(_stack.Pop(), stackNumber);
+                case "*":
+                    return _calculator.Multiply(_stack.Pop(), _stack.Pop());
+                case "/":
+                    stackNumber = _stack.Pop();
+                    return _calculator.Divide(_stack.Pop(), stackNumber);
+                case "+":
+                    return _calculator.Add(_stack.Pop(), _stack.Pop());
+                default:
+                    stackNumber = _stack.Pop();
+                    return _calculator.Subtract(_stack.Pop(), stackNumber);
+            }
         }
     }
 }

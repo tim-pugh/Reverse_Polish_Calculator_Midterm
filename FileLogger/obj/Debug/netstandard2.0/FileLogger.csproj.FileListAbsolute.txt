@@ -15,3 +15,4 @@ C:\Users\Bubba\Desktop\Reverse_Polish_Calculator_Midterm\Reverse_Polish_Calculat
 C:\Users\Bubba\Desktop\Reverse_Polish_Calculator_Midterm\Reverse_Polish_Calculator_Midterm\FileLogger\obj\Debug\netstandard2.0\FileLogger.AssemblyInfo.cs
 C:\Users\Bubba\Desktop\Reverse_Polish_Calculator_Midterm\Reverse_Polish_Calculator_Midterm\FileLogger\obj\Debug\netstandard2.0\FileLogger.dll
 C:\Users\Bubba\Desktop\Reverse_Polish_Calculator_Midterm\Reverse_Polish_Calculator_Midterm\FileLogger\obj\Debug\netstandard2.0\FileLogger.pdb
+C:\Users\Bubba\Desktop\Reverse_Polish_Calculator_Midterm\Reverse_Polish_Calculator_Midterm\FileLogger\obj\Debug\netstandard2.0\FileLogger.csprojAssemblyReference.cache

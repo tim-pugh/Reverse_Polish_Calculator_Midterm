@@ -2,6 +2,7 @@
 using Xunit;
 using System.Collections.Generic;
 using FakeItEasy;
+using System;
 
 namespace ReversePolishCalculator
 {
@@ -123,6 +124,29 @@ namespace ReversePolishCalculator
             var calculation = rpnEngine.CalculateLoop(rpnTokens, _stack);
 
             calculation.Should().Be(expectedValue);
+
+        }
+
+        [Theory]
+        [InlineData("1", "1", "%", "0")]
+        public void RpnEngine_CalculateLoop_Failure(params string[] operation)
+        {
+            var rpnEngine = new RpnEngine();
+            var _stack = new Stack<decimal>();
+
+            var expectedValue = decimal.Parse(operation[3]);
+            string[] rpnTokens = new string[3];
+            for (int i = 0; i < 3; ++i)
+            {
+                rpnTokens[i] = operation[i];
+            }
+
+
+
+
+            Action calculation = () => rpnEngine.CalculateLoop(rpnTokens, _stack);
+
+            calculation.Should().Throw<ArgumentException>();
 
         }
     }

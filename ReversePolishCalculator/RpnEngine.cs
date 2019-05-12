@@ -23,24 +23,7 @@ namespace ReversePolishCalculator
         {
             var rpnTokens = SplitInput(Console.ReadLine());
 
-            foreach (var rpnToken in rpnTokens)
-            {
-                _log.Debug(rpnToken);
-                if (TryParseDecimal(rpnToken))
-                { _stack.Push(decimal.Parse(rpnToken)); }
-                else if(ValidRpnOperation(rpnToken))
-                {
-                    _stack.Push(Calculate(rpnToken, _stack));
-                }
-                else
-                {
-                    var message = $"Could not parse [{rpnToken}]";
-                    _log.Fatal(message);
-                    throw new ArgumentException(message, nameof(rpnToken));
-                }
-            }
-
-            var result = _stack.Pop();
+            var result = CalculateLoop(rpnTokens,_stack);
             _log.Debug($"Result of calculation is [{result}]");
             Console.WriteLine(result);
         }
@@ -86,6 +69,29 @@ namespace ReversePolishCalculator
                     stackNumber = _stack.Pop();
                     return _calculator.Subtract(_stack.Pop(), stackNumber);
             }
+        }
+
+        public decimal CalculateLoop(string[] rpnTokens, Stack<decimal> _stack)
+        {
+            //var rpnTokens = SplitInput(Console.ReadLine());
+
+            foreach (var rpnToken in rpnTokens)
+            {
+                _log.Debug(rpnToken);
+                if (TryParseDecimal(rpnToken))
+                { _stack.Push(decimal.Parse(rpnToken)); }
+                else if (ValidRpnOperation(rpnToken))
+                {
+                    _stack.Push(Calculate(rpnToken, _stack));
+                }
+                else
+                {
+                    var message = $"Could not parse [{rpnToken}]";
+                    _log.Fatal(message);
+                    throw new ArgumentException(message, nameof(rpnToken));
+                }
+            }
+            return _stack.Pop();
         }
     }
 }

@@ -100,22 +100,29 @@ namespace ReversePolishCalculator
         }
 
         [Theory]
-        [InlineData("3","3", "+")]
-        [InlineData("-")]
-        [InlineData("*")]
-        [InlineData("/")]
-        [InlineData("^")]
-        public void RpnEngine_Calculate_Success(params string[] operation)
+        [InlineData("3","3", "+","6")]
+        [InlineData("3", "3", "-", "0")]
+        [InlineData("3", "3", "*", "9")]
+        [InlineData("3", "3", "/", "1")]
+        [InlineData("3", "3", "^", "27")]
+        public void RpnEngine_CalculateLoop_Success(params string[] operation)
         {
             var rpnEngine = new RpnEngine();
             var _stack = new Stack<decimal>();
 
-            _stack.Push(2);
-            _stack.Push(2);
+            var expectedValue = decimal.Parse(operation[3]);
+            string[] rpnTokens = new string[3];
+           for(int i =0; i < 3; ++i)
+            {
+                rpnTokens[i] = operation[i];
+            }
 
-           // var calculation = rpnEngine.Calculate(operation, _stack);
 
-            //calculation.Should().Be();
+       
+
+            var calculation = rpnEngine.CalculateLoop(rpnTokens, _stack);
+
+            calculation.Should().Be(expectedValue);
 
         }
     }
